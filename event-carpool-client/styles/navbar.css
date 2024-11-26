@@ -1,0 +1,94 @@
+/* src/styles/navbar.css */
+.navbar {
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  width: 97%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #B49E8D ; 
+  padding: 1rem 2rem;
+  color: #FDF8E4;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FDF8E4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-left .navbar-brand:hover {
+  color: #F88A42;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.search-form {
+  margin-right: 1rem;
+}
+
+.search-input {
+  padding: 0.5rem;
+  border: 1px solid #6c757d;
+  border-radius: 5px;
+  background-color: transparent;
+  color: black;
+  outline: none;
+  transition: border-color 0.3s ease;    
+  margin-right: 10px;
+}
+
+.search-icon{
+  /* -30px and 10px */
+  color: black;
+  margin-left: -30px; 
+  margin-right: 10px;
+}
+
+.search-input::placeholder {
+  color: black;
+}
+
+.search-input:focus {
+  border-color: black;
+  background-color: #D9EAD3;
+  box-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
+}
+
+.profile-icon {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: #FDF8E4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.profile-icon:hover {
+  color: #F88A42;
+}
+
+
+.logout-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #D9EAD3;
+  color: #333;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #F88A42;
+  color: #000000; 
+  border-color: #6c757d;
+}

@@ -1,0 +1,68 @@
+/* src/styles/createEvent.css */
+.create-event-container {
+  width: 50%; 
+  margin: 40px auto;
+  margin-top: 80px;
+  padding: 20px;
+  background-color: #b49e8d;
+  border: 1px solid #ddd; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.create-event-container h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #2c3e50; 
+  margin-bottom: 20px;
+}
+
+.create-event-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.create-event-form input,
+.create-event-form textarea {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  background-color: #d9ead3;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.create-event-form input:focus,
+.create-event-form textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+.create-event-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.create-event-form button {
+  padding: 12px 20px;
+  font-size: 16px;
+  box-shadow:  4px 3px 2px 0px black;
+  color: #fff;
+  background-color: #f88a42; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.create-event-form button:hover {
+  transform: scale(1.02);
+}
+
+.create-event-form button:active {
+  transform: scale(0.98);
+}
