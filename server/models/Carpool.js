@@ -12,15 +12,3 @@ const carpoolSchema = new mongoose.Schema({
 
 module.exports = mongoose.model('Carpool', carpoolSchema);
 
-// const mongoose = require('mongoose');
-
-// const CarpoolSchema = new mongoose.Schema({
-//   driverId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
-//   eventId: { type: mongoose.Schema.Types.ObjectId, ref: 'Event', required: true },
-//   seatsAvailable: { type: Number, required: true },
-//   routeInformation: { type: String, required: true },
-//   departureTime: { type: Date, required: true },
-//   riders: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }],
-// });
-
-// module.exports = mongoose.model('Carpool', CarpoolSchema);

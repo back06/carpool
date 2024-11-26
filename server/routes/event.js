@@ -15,28 +15,6 @@ router.post('/', async (req, res) => {
   }
 });
 
-// List Events with Filtering
-router.get('/', async (req, res) => {
-  try {
-    const { location, date } = req.query; // Get query parameters
-
-    // Build query
-    let query = {};
-    if (location) {
-      query.location = new RegExp(location, 'i'); // Case insensitive match
-    }
-    if (date) {
-      query.date = { $gte: new Date(date) }; // Filter for dates greater than or equal to the provided date
-    }
-
-    const events = await Event.find(query);
-    res.json(events);
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-});
-
-
 // Get Event Details by ID
 router.get('/:eventId', async (req, res) => {
   try {
@@ -55,12 +33,3 @@ router.get('/:eventId', async (req, res) => {
 
 module.exports = router;
 
-// List Events
-// router.get('/', async (req, res) => {
-//   try {
-//     const events = await Event.find({});
-//     res.json(events);
-//   } catch (error) {
-//     res.status(500).json({ error: error.message });
-//   }
-// });
